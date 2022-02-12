@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Sans-Serif;
+    font-size: 20px;
+    color: #7F7c83;
+}
+
+p {
+    line-height: 40px;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+}
+
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+
+#navbar ul {
+    padding: 0;
+    font-size: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 88%;
+}
+
+#navbar li {
+    border-top: 1px solid;
+    color: #000;
+    position: relative;
+    margin-bottom: 15px;
+    list-style: none;
+    width: 100%;
+}
+
+#navbar a {
+    padding: 10px;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+#navbar ul li a:hover {
+    color: #747474;
+}
+
+#main-doc {
+    position: absolute;
+    padding: 20px;
+    margin-bottom: 110px;
+    margin-left: 310px;
+}
+
+.main-section {
+    min-height: 100vh;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+section article {
+    margin: 15px;
+    color: #7F7c83;
+    font-size: 15px;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code {
+    background-color: #d0ced3;
+    display: block;
+    padding: 20px;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+    }
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
