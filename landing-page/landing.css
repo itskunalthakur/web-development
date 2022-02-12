@@ -1,0 +1,249 @@
+                                        * {
+                                            box-sizing: border-box;
+                                            margin: 0;
+                                            padding: 0;
+                                        }
+                                        
+                                        body {
+                                            background-color: antiquewhite;
+                                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                            line-height: 1.6;
+                                        }
+                                        /* main part */
+                                        
+                                        .main {
+                                            display: flex;
+                                            flex-direction: column;
+                                            max-width: 1280px;
+                                            margin: 0 auto;
+                                            padding: 0 20px;
+                                            position: relative;
+                                        }
+                                        /* header css */
+                                        
+                                        #header {
+                                            display: flex;
+                                            max-width: 100%;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            padding: 15px 20px;
+                                            position: fixed;
+                                            left: 0;
+                                            right: 0;
+                                            top: 0;
+                                        }
+                                        /* logo and image */
+                                        
+                                        .Logo {
+                                            display: flex;
+                                        }
+                                        
+                                        .logo img {
+                                            width: 70%;
+                                        }
+                                        /* list */
+                                        
+                                        #nav-bar {
+                                            display: flex;
+                                            flex-grow: 1;
+                                            min-height: 80px;
+                                            align-items: center;
+                                        }
+                                        
+                                        #nav-bar ul {
+                                            text-align: center;
+                                            padding: 0;
+                                        }
+                                        
+                                        #nav-bar ul li {
+                                            display: block;
+                                            margin: bottom 20px;
+                                        }
+                                        
+                                        #nav-bar ul li a {
+                                            font-size: 20px;
+                                            color: black;
+                                            text-decoration: none;
+                                        }
+                                        
+                                        #nav-bar a:hover {
+                                            background-color: black;
+                                            color: white;
+                                            border-radius: 5px;
+                                        }
+                                        /* form styling */
+                                        
+                                        .form {
+                                            max-width: 100%;
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            margin-top: 158px;
+                                        }
+                                        
+                                        form form {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            max-width: 430px;
+                                            width: 100%;
+                                        }
+                                        
+                                        .form input {
+                                            display: block;
+                                        }
+                                        
+                                        #email {
+                                            margin: 10px;
+                                            width: 250px;
+                                            height: 35px;
+                                        }
+                                        
+                                        #submit {
+                                            padding: 4px 20px;
+                                            margin-bottom: 20px;
+                                            font-size: 18px;
+                                            width: 150px;
+                                            border: none;
+                                            background-color: aqua;
+                                            cursor: pointer;
+                                            font-weight: bold;
+                                            height: 45px;
+                                            text-transform: uppercase;
+                                        }
+                                        
+                                        #features {
+                                            max-width: 100%;
+                                            margin: 0 auto;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                        }
+                                        
+                                        #features .kunal {
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                        
+                                        .features .kunal .icon {
+                                            max-width: 100px;
+                                            width: 100%;
+                                            color: orange;
+                                            display: none;
+                                        }
+                                        
+                                        .features .kunal .content {
+                                            flex-grow: 1;
+                                            text-align: center;
+                                        }
+                                        
+                                        #videos {
+                                            max-width: 100%;
+                                            margin: 50px auto;
+                                        }
+                                        /* pricing section */
+                                        
+                                        #pricing {
+                                            display: flex;
+                                            flex-direction: row;
+                                        }
+                                        
+                                        #pricing .kunal {
+                                            width: 100%;
+                                            margin: 0 auto;
+                                            margin-bottom: 15px;
+                                            max-width: 350px;
+                                            text-align: center;
+                                            border: 1px solid black;
+                                            font-size: 35px;
+                                            border-radius: 4px;
+                                        }
+                                        
+                                        #pricing .kunal h2 {
+                                            color: black;
+                                            padding: 15px 0;
+                                            text-transform: uppercase;
+                                            font-weight: bold;
+                                            font-size: 20px;
+                                            width: 100%;
+                                            background-color: rgb(209, 194, 194);
+                                        }
+                                        
+                                        #pricing .kunal strong {
+                                            font-size: 24px;
+                                        }
+                                        
+                                        .kunal p {
+                                            font-size: 20px;
+                                        }
+                                        
+                                        .btn {
+                                            background-color: green;
+                                            padding: 8px 20px;
+                                            margin: 15px 0;
+                                            color: white;
+                                            cursor: pointer;
+                                            font-size: 24px;
+                                            border: 0px;
+                                        }
+                                        
+                                        footer {
+                                            padding: 20px;
+                                            margin-top: 30px;
+                                            background-color: rgb(182, 182, 182);
+                                            text-align: center;
+                                            margin: 20px;
+                                        }
+                                        
+                                        footer>ul {
+                                            padding: 0;
+                                        }
+                                        
+                                        footer>ul li {
+                                            display: inline;
+                                        }
+                                        
+                                        footer>ul li a {
+                                            color: black;
+                                            text-decoration: none;
+                                        }
+                                        /* media query */
+                                        
+                                        @media (min-width: 550px) {
+                                            #features .kunal .icon {
+                                                display: block;
+                                            }
+                                            #features .kunal .content {
+                                                text-align: left;
+                                            }
+                                        }
+                                        
+                                        @media (min-width: 600px) {
+                                            #header {
+                                                flex-direction: row;
+                                                left: 5%;
+                                                right: 5%;
+                                            }
+                                            #nav-bar ul {
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: flex-end;
+                                            }
+                                            #nav-bar ul li {
+                                                display: inline;
+                                                margin-right: 50px;
+                                            }
+                                            #nav-bar ul li:last-child {
+                                                margin-right: 0;
+                                            }
+                                        }
+                                        
+                                        @media (min-width: 800px) {
+                                            #pricing {
+                                                flex-direction: row;
+                                                align-self: center;
+                                            }
+                                            #pricing .card:not(last-child) {
+                                                margin-right: 15px;
+                                            }
+                                        }
